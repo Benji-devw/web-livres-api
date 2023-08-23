@@ -5,6 +5,7 @@ const express = require('express'),
 
 // ROUTE Books
 router.get('/', booksController.getBooks);
+router.get('/:id', booksController.getBook);
 // router.post('/login', userController.login);
 // router.get('/', userController.getUser);
 
