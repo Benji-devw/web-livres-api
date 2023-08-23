@@ -37,25 +37,35 @@ exports.getBestRating = (req, res) => {
         },
         {
             $limit: 3
-        }    
-
+        }
     ])
   .then(data => res.status(200).json(data))
   .catch(err => res.status(500).json({error: err}))
 }
 
-exports.addBook = (req, res) => {
+// TODO: Check for multer image upload
+exports.addBook = async (req, res) => {
     console.log('ADD_BOOK');
-    Books.create(req.body)
-    .then(data => res.status(200).json(data))
-    .catch(err => res.status(500).json({error: err}))
+    console.log(req.headers.authorization);
+    
+    try {
+        const bookData = JSON.parse(req.body.book);
+        bookData.imageUrl = "https://via.placeholder.com/206x260";
+        const book = new Books(bookData); // Utilisez directement bookData
+        
+        const savedBook = await book.save(); // Enregistrez le livre
+        
+        res.status(200).json(savedBook); // Renvoyez les données enregistrées
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'An error occurred while adding the book.' });
+    }
 }
 
 
 
 
 
-// TODO: add POST /api/books
 // TODO: add PUT /api/books/:id
 // TODO: add DELETE /api/books/:id
 // TODO: add POST /api/books/:id/rating
