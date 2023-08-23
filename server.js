@@ -30,6 +30,7 @@ app.use((req, res, next) => {
 app.use('/api/auth', userRouter);
 app.use('/api/books', booksRouter);
 app.use('/api/book', booksRouter);
+app.use('/api/books/bestrating', booksRouter);
 
 
 const PORT = process.env.PORT || 4000

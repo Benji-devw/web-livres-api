@@ -4,10 +4,11 @@ const express = require('express'),
 
 
 // ROUTE Books
-router.get('/', booksController.getBooks);
+router.get('/bestrating', booksController.getBestRating);
 router.get('/:id', booksController.getBook);
-// router.post('/login', userController.login);
-// router.get('/', userController.getUser);
+router.get('/', booksController.getBooks);
+
+router.post('/', booksController.addBook);
 
 
 module.exports = router;
