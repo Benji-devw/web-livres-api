@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require("mongoose")
 
 const userRouter = require('./router/user.router');
+const booksRouter = require('./router/books.router');
 
 mongoose
   .connect("mongodb://0.0.0.0:27017/web-livres", { useNewUrlParser: true, useUnifiedTopology: true })
@@ -27,6 +28,7 @@ app.use((req, res, next) => {
 
 app.use('/api/auth', userRouter);
 
+app.use('/api/books', booksRouter);
 
 const PORT = process.env.PORT || 4000
 app.listen(PORT, () => {
