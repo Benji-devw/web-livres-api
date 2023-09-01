@@ -1,12 +1,11 @@
 const jwt = require('jsonwebtoken');
- 
-// FIXME: Problem with authorization header / not exists in chrome
+
 module.exports = (req, res, next) => {
     try {
         // const token = req.headers["Authorization"];
         const token = req.headers.authorization.split(' ')[1];
         // console.log(token);
-       const decodedToken = jwt.verify(token, 'SECRET_KEY');
+       const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
         //    console.log(decodedToken);
        const userId = decodedToken.userId;
        req.auth = {

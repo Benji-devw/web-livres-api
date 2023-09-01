@@ -25,6 +25,6 @@ const upload = multer({
     }
 });
 
-const uploadSharp = upload.single('image'); // Utilisez .single() pour gérer un seul fichier
+const uploadMulter = upload.single('image'); // Utilisez .single() pour gérer un seul fichier
 
-module.exports = { uploadSharp };
+module.exports = { uploadMulter };

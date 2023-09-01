@@ -25,7 +25,7 @@ exports.login = (req, res) => {
     User.findOne({ email: req.body.email })
     .then((user) => {
         if(user === null) { 
-            res.status(401).json({message: 'Email not found!'})
+            res.status(401).json({message: 'Invalid email or password!'})
         } else {
             bcrypt.compare(req.body.password, user.password)
           .then(valid => {
@@ -36,9 +36,8 @@ exports.login = (req, res) => {
                 userId: user._id,
                 token: jwt.sign(
                     {userId: user._id}, 
-                    // process.env.JWT_SECRET,
-                    'SECRET_KEY',
-                    {expiresIn: '24h'} 
+                    process.env.JWT_SECRET,
+                    {expiresIn: '1y'} 
                 )
             })
           })
