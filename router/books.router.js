@@ -13,7 +13,7 @@ router.get('/:id', booksController.getBook);
 router.get('/', booksController.getBooks);
 
 router.post('/', auth, uploadSharp, booksController.addBook);
-router.put('/:id', booksController.updateBook);
+router.put('/:id', auth, uploadSharp, booksController.updateBook);
 router.delete('/:id', auth, booksController.deleteBook);
 
 

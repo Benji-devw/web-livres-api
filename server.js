@@ -1,19 +1,22 @@
 const express = require('express');
 const mongoose = require("mongoose")
+require('dotenv').config();
 
 const userRouter = require('./router/user.router');
 const booksRouter = require('./router/books.router');
 
+// console.log(process.env.NODE_ENV === 'production');
+// console.log(process.env.DATABASE_NAME);
 
 mongoose
-  .connect("mongodb://0.0.0.0:27017/web-livres", { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(`mongodb://0.0.0.0:27017/${process.env.DATABASE_NAME}`, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => { console.log("Connected to mongoDB"); })
-  .catch((e) => {
+  .catch((err) => {
     console.log("Error while DB connecting");
-    console.log(e);
+    console.log(err);
   });
 
- 
+
 const app = express()
 
 
