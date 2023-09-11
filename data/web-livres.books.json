@@ -1,0 +1,298 @@
+[{
+  "_id": {
+    "$oid": "64e5236614d4e63d3ea94b23"
+  },
+  "id": "1",
+  "userId": "64e3dd172d5718e7a6873a00",
+  "title": "Milwaukee Mission",
+  "author": "Elder Cooper",
+  "imageUrl": "https://via.placeholder.com/206x260",
+  "year": 1111111111,
+  "genre": "Policier",
+  "ratings": [
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "clc4wj5lh3gyi0ak4eq4n8syr",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    }
+  ],
+  "averageRating": 3
+},
+{
+  "_id": {
+    "$oid": "64e5236614d4e63d3ea94b24"
+  },
+  "id": "2",
+  "userId": "clbxs3tag6jkr0biul4trzbrv",
+  "title": "Book for Esther",
+  "author": "Alabaster",
+  "imageUrl": "https://via.placeholder.com/206x260",
+  "year": 2022,
+  "genre": "Paysage",
+  "ratings": [
+    {
+      "userId": "clbxs3tag6jkr0biul4trzbrv",
+      "grade": 4
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    }
+  ],
+  "averageRating": 4.2
+},
+{
+  "_id": {
+    "$oid": "64e5236614d4e63d3ea94b25"
+  },
+  "id": "3",
+  "userId": "1",
+  "title": "The Kinfolk Table",
+  "author": "Nathan Williams",
+  "imageUrl": "https://via.placeholder.com/206x260",
+  "year": 2022,
+  "genre": "Cuisine",
+  "ratings": [
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    }
+  ],
+  "averageRating": 3
+},
+{
+  "_id": {
+    "$oid": "64e5236614d4e63d3ea94b26"
+  },
+  "id": "4",
+  "userId": "1",
+  "title": "Milwaukee Mission",
+  "author": "Elder Cooper",
+  "imageUrl": "https://via.placeholder.com/206x260",
+  "year": 2021,
+  "genre": "Policier",
+  "ratings": [
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    }
+  ],
+  "averageRating": 3
+},
+{
+  "_id": {
+    "$oid": "64e5236614d4e63d3ea94b27"
+  },
+  "id": "5",
+  "userId": "1",
+  "title": "Book for Esther",
+  "author": "Alabaster",
+  "imageUrl": "https://via.placeholder.com/206x260",
+  "year": 2022,
+  "genre": "Paysage",
+  "ratings": [
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    }
+  ],
+  "averageRating": 4
+},
+{
+  "_id": {
+    "$oid": "64e5236614d4e63d3ea94b28"
+  },
+  "id": "6",
+  "userId": "1",
+  "title": "The Kinfolk Table",
+  "author": "Nathan Williams",
+  "imageUrl": "https://via.placeholder.com/206x260",
+  "year": 2022,
+  "genre": "Cuisine",
+  "ratings": [
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    }
+  ],
+  "averageRating": 3
+},
+{
+  "_id": {
+    "$oid": "64e5236614d4e63d3ea94b29"
+  },
+  "id": "7",
+  "userId": "1",
+  "title": "Milwaukee Mission",
+  "author": "Elder Cooper",
+  "imageUrl": "https://via.placeholder.com/206x260",
+  "year": 2021,
+  "genre": "Policier",
+  "ratings": [
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    }
+  ],
+  "averageRating": 3
+},
+{
+  "_id": {
+    "$oid": "64e5236614d4e63d3ea94b2a"
+  },
+  "id": "8",
+  "userId": "clc7s9xnh7zpt0ak4fisdwuj1",
+  "title": "Book for Esther",
+  "author": "Alabaster",
+  "imageUrl": "https://via.placeholder.com/206x260",
+  "year": 2022,
+  "genre": "Paysage",
+  "ratings": [
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    }
+  ],
+  "averageRating": 4
+},
+{
+  "_id": {
+    "$oid": "64e5236614d4e63d3ea94b2b"
+  },
+  "id": "9",
+  "userId": "64e3dd172d5718e7a6873a00",
+  "title": "The Kinfolk Table",
+  "author": "Nathan Williams",
+  "imageUrl": "https://via.placeholder.com/206x260",
+  "year": 2022,
+  "genre": "Cuisine",
+  "ratings": [
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "1",
+      "grade": 5
+    },
+    {
+      "userId": "clc4wj5lh3gyi0ak4eq4n8syr",
+      "grade": 1
+    }
+  ],
+  "averageRating": 3
+},
+{
+  "_id": {
+    "$oid": "64ee47a35bd955c9e3aa2cb1"
+  },
+  "userId": "64e3dd172d5718e7a6873a00",
+  "title": "eeeeeeeeeee",
+  "author": "aaaaaaaaa",
+  "imageUrl": "http://localhost:4000/uploads/1693339721968-529375464-capture-d'ã©cran-2023-07-08-125215.png",
+  "year": 2023,
+  "genre": "qsdqsd",
+  "ratings": [
+    {
+      "userId": "64e3dd172d5718e7a6873a00",
+      "grade": 3
+    }
+  ],
+  "averageRating": 3,
+  "__v": 0
+}]
