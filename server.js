@@ -9,7 +9,8 @@ const booksRouter = require('./router/books.router');
 // console.log(process.env.DATABASE_NAME);
 
 mongoose
-  .connect(`mongodb://0.0.0.0:27017/${process.env.DATABASE_NAME}`, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(`mongodb://host.docker.internal:27017/${process.env.DATABASE_NAME}`, { useNewUrlParser: true, useUnifiedTopology: true })
+  // .connect(`mongodb://0.0.0.0:27017/${process.env.DATABASE_NAME}`, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => { console.log("Connected to mongoDB"); })
   .catch((err) => {
     console.log("Error while DB connecting");

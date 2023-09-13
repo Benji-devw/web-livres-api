@@ -1,17 +1,18 @@
-# Image source: https://hub.docker.com/_/node/
-FROM node:slim
+# Utilisez l'image officielle Node.js depuis Docker Hub
+FROM node:latest
 
-# Create app directory
+# Créez un répertoire de travail dans le conteneur
 WORKDIR /app
 
-# Bundle app source
-COPY . /app
+# Copiez les fichiers de votre projet dans le répertoire de travail du conteneur
+COPY . .
 
-# Install app dependencies
+# Installez les dépendances de votre application
 RUN npm install
 
-# Expose port
+# Exposez le port sur lequel votre application écoute (si nécessaire)
+# Vous pouvez le changer en fonction du port réel utilisé par votre application
 EXPOSE 4000
 
-# Run app
-CMD node server.js
+# Commande pour démarrer votre application
+CMD ["npm", "start"]
